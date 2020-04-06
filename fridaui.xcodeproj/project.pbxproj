@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		794CADDA2435E18A0063FF2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794CADD92435E18A0063FF2A /* AppDelegate.m */; };
+		794CADDD2435E18A0063FF2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794CADDC2435E18A0063FF2A /* ViewController.m */; };
+		794CADDF2435E18B0063FF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794CADDE2435E18B0063FF2A /* Assets.xcassets */; };
+		794CADE22435E18B0063FF2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794CADE02435E18B0063FF2A /* Main.storyboard */; };
+		794CADE52435E18B0063FF2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 794CADE42435E18B0063FF2A /* main.m */; };
+		794CADF02435E18B0063FF2A /* fridauiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 794CADEF2435E18B0063FF2A /* fridauiTests.m */; };
+		794CADFB2435E18B0063FF2A /* fridauiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 794CADFA2435E18B0063FF2A /* fridauiUITests.m */; };
+		794CAE0D2435E2810063FF2A /* libfrida-core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 794CAE0C2435E2810063FF2A /* libfrida-core.a */; };
+		794CAE0F2435E29D0063FF2A /* frida-core.h in Headers */ = {isa = PBXBuildFile; fileRef = 794CAE0B2435E27F0063FF2A /* frida-core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		794CAE172435E3740063FF2A /* libbsm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 794CAE112435E31E0063FF2A /* libbsm.tbd */; };
+		794CAE182435E37D0063FF2A /* libm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 794CAE132435E3330063FF2A /* libm.tbd */; };
+		794CAE192435E3890063FF2A /* libdl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 794CAE152435E34C0063FF2A /* libdl.tbd */; };
+		794CAE1B2435E3950063FF2A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 794CAE1A2435E3950063FF2A /* libresolv.tbd */; };
+		794CAE1D2435E3A90063FF2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794CAE1C2435E3A80063FF2A /* Foundation.framework */; };
+		794CAE1F2435E3B20063FF2A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794CAE1E2435E3B20063FF2A /* AppKit.framework */; };
+		794CAE222435F7650063FF2A /* FridaUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 794CAE202435F7650063FF2A /* FridaUtil.h */; };
+		794CAE232435F7650063FF2A /* FridaUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 794CAE212435F7650063FF2A /* FridaUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		794CADEC2435E18B0063FF2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 794CADCD2435E18A0063FF2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794CADD42435E18A0063FF2A;
+			remoteInfo = fridaui;
+		};
+		794CADF72435E18B0063FF2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 794CADCD2435E18A0063FF2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794CADD42435E18A0063FF2A;
+			remoteInfo = fridaui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		794CADD52435E18A0063FF2A /* fridaui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fridaui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794CADD82435E18A0063FF2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		794CADD92435E18A0063FF2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		794CADDB2435E18A0063FF2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		794CADDC2435E18A0063FF2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		794CADDE2435E18B0063FF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		794CADE12435E18B0063FF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		794CADE32435E18B0063FF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794CADE42435E18B0063FF2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		794CADE62435E18B0063FF2A /* fridaui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fridaui.entitlements; sourceTree = "<group>"; };
+		794CADEB2435E18B0063FF2A /* fridauiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fridauiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		794CADEF2435E18B0063FF2A /* fridauiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fridauiTests.m; sourceTree = "<group>"; };
+		794CADF12435E18B0063FF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794CADF62435E18B0063FF2A /* fridauiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fridauiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		794CADFA2435E18B0063FF2A /* fridauiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fridauiUITests.m; sourceTree = "<group>"; };
+		794CADFC2435E18B0063FF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794CAE0B2435E27F0063FF2A /* frida-core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "frida-core.h"; sourceTree = "<group>"; };
+		794CAE0C2435E2810063FF2A /* libfrida-core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libfrida-core.a"; sourceTree = "<group>"; };
+		794CAE112435E31E0063FF2A /* libbsm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.tbd; path = usr/lib/libbsm.tbd; sourceTree = SDKROOT; };
+		794CAE132435E3330063FF2A /* libm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libm.tbd; path = usr/lib/libm.tbd; sourceTree = SDKROOT; };
+		794CAE152435E34C0063FF2A /* libdl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libdl.tbd; path = usr/lib/libdl.tbd; sourceTree = SDKROOT; };
+		794CAE1A2435E3950063FF2A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		794CAE1C2435E3A80063FF2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		794CAE1E2435E3B20063FF2A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		794CAE202435F7650063FF2A /* FridaUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FridaUtil.h; sourceTree = "<group>"; };
+		794CAE212435F7650063FF2A /* FridaUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FridaUtil.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		794CADD22435E18A0063FF2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794CAE1F2435E3B20063FF2A /* AppKit.framework in Frameworks */,
+				794CAE1D2435E3A90063FF2A /* Foundation.framework in Frameworks */,
+				794CAE1B2435E3950063FF2A /* libresolv.tbd in Frameworks */,
+				794CAE192435E3890063FF2A /* libdl.tbd in Frameworks */,
+				794CAE182435E37D0063FF2A /* libm.tbd in Frameworks */,
+				794CAE172435E3740063FF2A /* libbsm.tbd in Frameworks */,
+				794CAE0D2435E2810063FF2A /* libfrida-core.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794CADE82435E18B0063FF2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794CADF32435E18B0063FF2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794CADCC2435E18A0063FF2A = {
+			isa = PBXGroup;
+			children = (
+				794CAE0A2435E1BD0063FF2A /* frida */,
+				794CADD72435E18A0063FF2A /* fridaui */,
+				794CADEE2435E18B0063FF2A /* fridauiTests */,
+				794CADF92435E18B0063FF2A /* fridauiUITests */,
+				794CADD62435E18A0063FF2A /* Products */,
+				794CAE102435E31E0063FF2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		794CADD62435E18A0063FF2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				794CADD52435E18A0063FF2A /* fridaui.app */,
+				794CADEB2435E18B0063FF2A /* fridauiTests.xctest */,
+				794CADF62435E18B0063FF2A /* fridauiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		794CADD72435E18A0063FF2A /* fridaui */ = {
+			isa = PBXGroup;
+			children = (
+				794CADD82435E18A0063FF2A /* AppDelegate.h */,
+				794CADD92435E18A0063FF2A /* AppDelegate.m */,
+				794CADDB2435E18A0063FF2A /* ViewController.h */,
+				794CADDC2435E18A0063FF2A /* ViewController.m */,
+				794CADDE2435E18B0063FF2A /* Assets.xcassets */,
+				794CADE02435E18B0063FF2A /* Main.storyboard */,
+				794CADE32435E18B0063FF2A /* Info.plist */,
+				794CADE42435E18B0063FF2A /* main.m */,
+				794CADE62435E18B0063FF2A /* fridaui.entitlements */,
+				794CAE202435F7650063FF2A /* FridaUtil.h */,
+				794CAE212435F7650063FF2A /* FridaUtil.m */,
+			);
+			path = fridaui;
+			sourceTree = "<group>";
+		};
+		794CADEE2435E18B0063FF2A /* fridauiTests */ = {
+			isa = PBXGroup;
+			children = (
+				794CADEF2435E18B0063FF2A /* fridauiTests.m */,
+				794CADF12435E18B0063FF2A /* Info.plist */,
+			);
+			path = fridauiTests;
+			sourceTree = "<group>";
+		};
+		794CADF92435E18B0063FF2A /* fridauiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				794CADFA2435E18B0063FF2A /* fridauiUITests.m */,
+				794CADFC2435E18B0063FF2A /* Info.plist */,
+			);
+			path = fridauiUITests;
+			sourceTree = "<group>";
+		};
+		794CAE0A2435E1BD0063FF2A /* frida */ = {
+			isa = PBXGroup;
+			children = (
+				794CAE0B2435E27F0063FF2A /* frida-core.h */,
+				794CAE0C2435E2810063FF2A /* libfrida-core.a */,
+			);
+			path = frida;
+			sourceTree = "<group>";
+		};
+		794CAE102435E31E0063FF2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				794CAE1E2435E3B20063FF2A /* AppKit.framework */,
+				794CAE1C2435E3A80063FF2A /* Foundation.framework */,
+				794CAE1A2435E3950063FF2A /* libresolv.tbd */,
+				794CAE152435E34C0063FF2A /* libdl.tbd */,
+				794CAE132435E3330063FF2A /* libm.tbd */,
+				794CAE112435E31E0063FF2A /* libbsm.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		794CAE0E2435E2930063FF2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794CAE0F2435E29D0063FF2A /* frida-core.h in Headers */,
+				794CAE222435F7650063FF2A /* FridaUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		794CADD42435E18A0063FF2A /* fridaui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794CADFF2435E18B0063FF2A /* Build configuration list for PBXNativeTarget "fridaui" */;
+			buildPhases = (
+				794CAE0E2435E2930063FF2A /* Headers */,
+				794CADD12435E18A0063FF2A /* Sources */,
+				794CADD22435E18A0063FF2A /* Frameworks */,
+				794CADD32435E18A0063FF2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fridaui;
+			productName = fridaui;
+			productReference = 794CADD52435E18A0063FF2A /* fridaui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		794CADEA2435E18B0063FF2A /* fridauiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794CAE022435E18B0063FF2A /* Build configuration list for PBXNativeTarget "fridauiTests" */;
+			buildPhases = (
+				794CADE72435E18B0063FF2A /* Sources */,
+				794CADE82435E18B0063FF2A /* Frameworks */,
+				794CADE92435E18B0063FF2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				794CADED2435E18B0063FF2A /* PBXTargetDependency */,
+			);
+			name = fridauiTests;
+			productName = fridauiTests;
+			productReference = 794CADEB2435E18B0063FF2A /* fridauiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		794CADF52435E18B0063FF2A /* fridauiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794CAE052435E18B0063FF2A /* Build configuration list for PBXNativeTarget "fridauiUITests" */;
+			buildPhases = (
+				794CADF22435E18B0063FF2A /* Sources */,
+				794CADF32435E18B0063FF2A /* Frameworks */,
+				794CADF42435E18B0063FF2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				794CADF82435E18B0063FF2A /* PBXTargetDependency */,
+			);
+			name = fridauiUITests;
+			productName = fridauiUITests;
+			productReference = 794CADF62435E18B0063FF2A /* fridauiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794CADCD2435E18A0063FF2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "袁东明";
+				TargetAttributes = {
+					794CADD42435E18A0063FF2A = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					794CADEA2435E18B0063FF2A = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 794CADD42435E18A0063FF2A;
+					};
+					794CADF52435E18B0063FF2A = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 794CADD42435E18A0063FF2A;
+					};
+				};
+			};
+			buildConfigurationList = 794CADD02435E18A0063FF2A /* Build configuration list for PBXProject "fridaui" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 794CADCC2435E18A0063FF2A;
+			productRefGroup = 794CADD62435E18A0063FF2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				794CADD42435E18A0063FF2A /* fridaui */,
+				794CADEA2435E18B0063FF2A /* fridauiTests */,
+				794CADF52435E18B0063FF2A /* fridauiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		794CADD32435E18A0063FF2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794CADDF2435E18B0063FF2A /* Assets.xcassets in Resources */,
+				794CADE22435E18B0063FF2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794CADE92435E18B0063FF2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794CADF42435E18B0063FF2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794CADD12435E18A0063FF2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794CADDD2435E18A0063FF2A /* ViewController.m in Sources */,
+				794CADE52435E18B0063FF2A /* main.m in Sources */,
+				794CAE232435F7650063FF2A /* FridaUtil.m in Sources */,
+				794CADDA2435E18A0063FF2A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794CADE72435E18B0063FF2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794CADF02435E18B0063FF2A /* fridauiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794CADF22435E18B0063FF2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794CADFB2435E18B0063FF2A /* fridauiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		794CADED2435E18B0063FF2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794CADD42435E18A0063FF2A /* fridaui */;
+			targetProxy = 794CADEC2435E18B0063FF2A /* PBXContainerItemProxy */;
+		};
+		794CADF82435E18B0063FF2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794CADD42435E18A0063FF2A /* fridaui */;
+			targetProxy = 794CADF72435E18B0063FF2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		794CADE02435E18B0063FF2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794CADE12435E18B0063FF2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		794CADFD2435E18B0063FF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		794CADFE2435E18B0063FF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		794CAE002435E18B0063FF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fridaui/fridaui.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = fridaui/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frida",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdone.fridaui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		794CAE012435E18B0063FF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fridaui/fridaui.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = fridaui/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frida",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdone.fridaui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		794CAE032435E18B0063FF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = fridauiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdone.fridauiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fridaui.app/Contents/MacOS/fridaui";
+			};
+			name = Debug;
+		};
+		794CAE042435E18B0063FF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = fridauiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdone.fridauiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fridaui.app/Contents/MacOS/fridaui";
+			};
+			name = Release;
+		};
+		794CAE062435E18B0063FF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = fridauiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdone.fridauiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = fridaui;
+			};
+			name = Debug;
+		};
+		794CAE072435E18B0063FF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = fridauiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdone.fridauiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = fridaui;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		794CADD02435E18A0063FF2A /* Build configuration list for PBXProject "fridaui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794CADFD2435E18B0063FF2A /* Debug */,
+				794CADFE2435E18B0063FF2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794CADFF2435E18B0063FF2A /* Build configuration list for PBXNativeTarget "fridaui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794CAE002435E18B0063FF2A /* Debug */,
+				794CAE012435E18B0063FF2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794CAE022435E18B0063FF2A /* Build configuration list for PBXNativeTarget "fridauiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794CAE032435E18B0063FF2A /* Debug */,
+				794CAE042435E18B0063FF2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794CAE052435E18B0063FF2A /* Build configuration list for PBXNativeTarget "fridauiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794CAE062435E18B0063FF2A /* Debug */,
+				794CAE072435E18B0063FF2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 794CADCD2435E18A0063FF2A /* Project object */;
+}
